@@ -1,0 +1,28 @@
+body {
+}
+Header ul {
+    padding-left: 0;
+}
+header li { /*i had a trouble with this */
+    background-color: blueviolet;
+    border: 2px dotted red;
+    display: inline;
+}
+header li:hover{
+    background-color: brown;
+}
+
+header a {
+    border:2px dotted red;
+    color: maroon;
+    display: inline-block;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: blue;
+}
+
+section a {
+    border: 2px solid green;
+}
