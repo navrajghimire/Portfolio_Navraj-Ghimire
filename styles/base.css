@@ -6,6 +6,20 @@ body {
     color: rgb(75, 51, 124); 
 }
 
+<<<<<<< Updated upstream
+=======
+h1 {
+    font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
+    font-weight: 700; /* Use 400 for regular weight */
+}
+
+p {
+    font-family: 'sans-serif', Arial;
+    font-weight: 400;
+}
+
+/* Header styling */
+>>>>>>> Stashed changes
 header {
     background-color: #000000;
     color: white;
