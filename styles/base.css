@@ -1,22 +1,37 @@
+/* Reset default styles and set global styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'sans-serif', Arial;
     margin: 0;
     padding: 0;
     background-color: rgb(75, 51, 124);
-    color:  rgb(3, 234, 255);
+    color: rgb(3, 234, 255);
 }
 
+h1 {
+    font-family: 'Inter', sans-serif, Arial;
+    font-weight: 700; /* Use 400 for regular weight */
+}
+
+p {
+    font-family: 'sans-serif', Arial;
+    font-weight: 400;
+}
+
+/* Header styling */
 header {
     background-color: #000000;
-    color: white;
-    padding: 0.5em;
+    padding: 1em; /* Added padding for better spacing */
 }
+
+/* Logo styling */
 img {
     max-width: 100%;
     height: auto;
-    float: center;
+    /* Removed float: center; (float does not have a value of center) */
     margin-right: 2em;
 }
+
+/* Navigation styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -27,32 +42,6 @@ nav h1 {
     align-items: center;
 }
 
-section#about p:nth-child(3)::first-letter {
-    background-color: rgb(75, 51, 124);
-    color: rgb(3, 234, 255);
-    font-size: 5em;
-    font-weight: bold;
-    border-radius: 40px;
-    padding: 5px;
-
-}
-
-section#ProfessionalExperience p:nth-child(2)::first-letter {
-    background-color: rgb(75, 51, 124);
-    color: rgb(3, 234, 255);
-    font-size: 5em;
-    font-weight: bold;
-    border-radius: 40px;
-    padding: 5px;
-
-}
-
-h2 {
-    background-color: rgb(75, 51, 124);
-    color: white;
-    padding: 0.3em;
-    border-radius: 10px;
-}
 nav a {
     text-decoration: none;
     color: rgb(3, 234, 255);
@@ -67,10 +56,12 @@ nav a:hover {
     background-color: rgb(118, 57, 163);
 }
 
+/* Main content styling */
 main {
     padding: 2em;
 }
 
+/* Section styling */
 .section {
     margin: 2em 0;
     background-color: #f9f9f9;
@@ -84,11 +75,27 @@ main {
     margin: 0 auto;
 }
 
-::selection {
+/* Specific section styling */
+section#about p:nth-child(3)::first-letter,
+section#ProfessionalExperience p:nth-child(2)::first-letter {
     background-color: rgb(75, 51, 124);
-    color:  rgb(3, 234, 255);
+    color: rgb(3, 234, 255);
+    font-size: 5em;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 5px;
 }
 
+/* Heading 2 styling */
+h2 {
+    background-color: rgb(75, 51, 124);
+    color: white;
+    font-family: 'Inter', sans-serif, Arial;
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+/* Table styling */
 table {
     width: 100%;
     margin: 0 auto;
@@ -96,13 +103,20 @@ table {
     border-collapse: collapse;
     color: rgb(3, 234, 255);
     background-color: rgb(75, 51, 124);
-  }
+}
 
-  th {
+th {
     border: 5px solid #ddd;
     padding: 7px;
-  }
+}
 
+/* Text selection styling */
+::selection {
+    background-color: rgb(75, 51, 124);
+    color: rgb(3, 234, 255);
+}
+
+/* Footer styling */
 footer {
     background-color: #000000;
     color: rgb(3, 234, 255);
@@ -110,14 +124,25 @@ footer {
     padding: 1em;
 }
 
+/* Footer navigation styling */
+nav footer {
+    display: flex;
+    align-items: center;
+}
+
+/* Media query for larger screens */
 @media only screen and (min-width: 600px) {
     body {
-        background-color:  rgb(3, 234, 255);
+        background-color: rgb(3, 234, 255);
         color: rgb(75, 51, 124);
-
-    header {
-        padding: 1em;
     }
+    
+}
 
-    nav h1 {
-        font-size: 1.5em;
+/* Responsive styles for smaller screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+    ::selection {
+        background-color: rgb(3, 234, 255); /* Change selection background color for smaller screens */
+        color: rgb(75, 51, 124); /* Change selection text color for smaller screens */
+    }
+}
