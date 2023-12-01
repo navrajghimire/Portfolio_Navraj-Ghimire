@@ -8,55 +8,55 @@ console.log('Hello, World!'); // just saying hello
 
 /* alert ('Hello, World!'); // just saying hello */
 
-const DOB = 'Feb 27 1995'
-// DOB = 'MAR 15 1996'
-console.log(DOB);
+ // Footer - Display current year
+ const currentYear = new Date().getFullYear();
+ document.getElementById('current-year').innerText = currentYear;
 
-let firstname = "NAVRAJ"
-firstname = "Arya";
-console.log(firstname);
-console.log(typeof firstname);
 
-var age =44; // ESS syntax
-/* age = Number ('72') + ('11');*/
-age = 72 + 11;
-age =  35.445;
-console.log(age);
-console.log(typeof age);
+  // Alert Button
+  document.getElementById('btn-alert').addEventListener('click', function () {
+    alert('Hello world!');
+  });
 
-let friday = true;
-friday = false;
-console.log(friday);
+  // Hover Button
+  const hoverButton = document.getElementById('btn-hover');
 
-let fruits = new Array('apple', 'kiwi','orange','dragonfruit', 'grape');
-fruits.push('pineapple');
-fruits.push('kale'); // add item to array
-console.log(fruits);
-fruits.pop(); // remove last item from arrray
-console.log(fruits);
-let slicedorange = fruits[2].split('');
-console.log(slicedorange);
+  hoverButton.addEventListener('mouseover', function () {
+    hoverButton.innerText = 'Welcome';
+  });
 
-/*
-function sayName() { // ES5
-    console.log('My name is serrio');
-}
-*/
+  hoverButton.addEventListener('mouseleave', function () {
+    hoverButton.innerText = 'Click here to login';
+  });
 
-let sayName = (name, fruit) => { // ES6
-    console.log('My name is ' + name +'. My favourite fruit is ' + fruit + '.');
-  //  console.log('My name is Serrio. My favourite fruit is fruits[2].").
-  let peel = false; // local scope
-    console.log('My name is ${name}. My favourite fruit is ${fruit}.');
-}
 
-sayName("serrio", fruits[1]);
-sayName(firstname, 10);
-sayName("NAVRAJ", fruits [3]);
+   // Incrementing Button
+   let count = 1;
 
-if (peel != 1) {
-    console.log(typeof peel);
-    console
+   document.getElementById('btn-counter').addEventListener('click', function () {
+     count++;
+     document.getElementById('txt-counter').innerText = `Number: ${count}`;
+ 
+     // Check if the number is even or odd
+     if (count % 2 === 0) {
+       document.getElementById('txt-counter').classList.remove('odd');
+       document.getElementById('txt-counter').classList.add('even');
+     } else {
+       document.getElementById('txt-counter').classList.remove('even');
+       document.getElementById('txt-counter').classList.add('odd');
+     }
+   });
 
-}
+   
+  // For Loops
+  const numbersList = document.getElementById('numbers');
 
+  for (let i = 1; i <= 100; i++) {
+    const listItem = document.createElement('li');
+    listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
+    
+    // Change color based on even or odd
+    listItem.style.color = i % 2 === 0 ? 'blue' : 'green';
+
+    numbersList.appendChild(listItem);
+  }

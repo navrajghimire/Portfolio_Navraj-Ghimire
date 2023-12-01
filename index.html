@@ -7,10 +7,12 @@
     <link href="styles/base.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
      <!-- Link to the Google Fonts stylesheet -->
-     <script src="js/"></script>
+     <script defer src="js/main.js"></script>
       <!-- Link to the java script -->
 </head>
 <body>
+  
+ 
     <header>
       <main>
          <!-- Main content of the webpage starts from here -->
@@ -20,6 +22,11 @@
           <a href="#about">About Me</a>
           <a href="#ProfessionalExperience">Experience</a>
           <a href="#Certifications">Certifications</a>
+          <button id="btn-alert" style="background-color: rgb(101, 4, 180);padding: 1.5em;"> ok </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="btn-hover" style="background-color: rgb(255, 170, 0);padding: 1.5em;"> Click here to login </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="btn-counter" style="background-color: rgb(0, 255, 68);padding: 1.5em;"> Increment Counter </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p id="txt-counter" style="color: rgb(0, 255, 30);background-color: rgb(115, 0, 255);padding: 0.6em"> Number: 1</p>
+
         </h1>
         </nav>
     </header>
@@ -79,8 +86,10 @@
     </section>
       <h2>Education</h2>
       <section id="Education"></section>
-      <ol>
+      <ol id="numbers">
         <li> B.Sc Chemistry from Mumbai University (2003-2006) </li><br>
+        <li>Diploma in Graphics Design from SAIT (2023 -2025)</li> <br>
+        <li>Diploma in Graphics Design from SAIT (2023 -2025)</li> <br>
         <li>Diploma in Graphics Design from SAIT (2023 -2025)</li> <br>
      </ol>
     </section>
@@ -90,11 +99,11 @@
       <p><a href="https://www.linkedin.com/in/navraj-ghimire-12b28059/" target="_blank"><img src="Linkedn logo.png" alt="Linkedn logo"width="20"/></a>
           &nbsp; &nbsp;&nbsp; &nbsp;<a href="https://studio.youtube.com/channel/UCr8ZfSgPBqBSgNke6q7jaQQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" target="_blank"><img src="Youtube logo.png" alt="Youtube logo"width="28"/> </a>
         </p>
+       
       </section>
     </main>
     <footer>
-      &copy; Navraj Ghimire 2023  |   All Rights Reserved
+      &copy; Navraj Ghimire <span id="current-year"></span>  |   All Rights Reserved
     </footer>
-  </footer>
 </body>
 </html>
