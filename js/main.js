@@ -51,12 +51,12 @@ console.log('Hello, World!'); // just saying hello
   // For Loops
   const numbersList = document.getElementById('numbers');
 
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= 98; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
     
     // Change color based on even or odd
-    listItem.style.color = i % 2 === 0 ? 'blue' : 'green';
+    listItem.style.color = i % 2 === 0 ? 'red' : 'green';
 
     numbersList.appendChild(listItem);
   }
