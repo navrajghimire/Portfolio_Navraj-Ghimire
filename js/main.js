@@ -22,7 +22,7 @@ console.log('Hello, World!'); // just saying hello
   const hoverButton = document.getElementById('btn-hover');
 
   hoverButton.addEventListener('mouseover', function () {
-    hoverButton.innerText = 'Welcome';
+    hoverButton.innerText = '----- Welcome -----';
   });
 
   hoverButton.addEventListener('mouseleave', function () {
