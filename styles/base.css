@@ -160,6 +160,21 @@ section#ProfessionalExperience p:nth-child(2)::first-letter {
   }
 }
 
+  /* Style for green text */
+  .green-text {
+    color: rgb(115, 0, 255);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Style for red text */
+.red-text {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+
+}
+
 /* Footer styling */
 footer {
   background-color: #000000;
