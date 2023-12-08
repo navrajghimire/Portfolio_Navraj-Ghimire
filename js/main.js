@@ -7,6 +7,7 @@
 
 
 
+   
 /* alert */
 console.log('I Apologize for the unintentional mistake. Assuring you this will not be repeated in future....!!!'); // An Apology
 
@@ -15,9 +16,11 @@ console.log('I Apologize for the unintentional mistake. Assuring you this will n
     alert('I Apologize for the unintentional mistake. Assuring you this will not be repeated in future....!!!');
   });
 
-  
 
 
+
+
+   
 //Use JavaScript to change the button label, so the text of the button changes when the mouse hovers over it and then reverts when it leaves.
 // Hover Button
 
@@ -32,6 +35,8 @@ document.getElementById('btn-hover').onmouseleave = () => {
 
 
 
+
+   
    // Incrementing Button
    let count = 1;
 
@@ -39,10 +44,11 @@ document.getElementById('btn-hover').onmouseleave = () => {
      count++;
      document.getElementById('txt-counter').innerText = `Number: ${count}`;
 
-     
 
 
 
+
+   
 // Check whether the number is even or odd.
 if (count % 2 === 0) {
   document.getElementById('txt-counter').classList.remove('odd');
@@ -55,6 +61,7 @@ if (count % 2 === 0) {
 
 
 
+
    
   // For Loops
   const numbersList = document.getElementById('numbers');
@@ -62,10 +69,6 @@ if (count % 2 === 0) {
   for (let i = 1; i <= 100; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
-    
-    
-    // Change color based on even or odd
-    listItem.style.color = i % 2 === 0 ? 'rgb(115, 0, 255)' : 'rgb(0, 0, 0)';
 
     numbersList.appendChild(listItem);
   }
