@@ -37,17 +37,17 @@ document.getElementById('btn-hover').onmouseleave = () => {
 
 
    
-   // Incrementing Button
-   let count = 1;
+// Incrementing Button
+let count = 1;
 
-     document.getElementById('btn-counter').addEventListener('click', function () {
-     count++;
-     document.getElementById('txt-counter').innerText = `Number: ${count}`;
-
-
+document.getElementById('btn-counter').addEventListener('click', function () {
+count++;
+document.getElementById('txt-counter').innerText = `Number: ${count}`;
 
 
 
+
+     
    
 // Check whether the number is even or odd.
 if (count % 2 === 0) {
